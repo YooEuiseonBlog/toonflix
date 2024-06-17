@@ -1,6 +1,13 @@
 import 'package:flutter/material.dart';
 
+class Player {
+  String? name;
+  Player({required this.name});
+}
+
 void main() {
+  var nico = Player(name: 'potato');
+
   runApp(App());
 }
 
@@ -12,7 +19,7 @@ class App extends StatelessWidget {
         appBar: AppBar(
           backgroundColor: Colors.blue,
           title: Text(
-            'Helllo flutter!',
+            'Hello flutter!',
             style: TextStyle(color: Colors.white),
           ),
           centerTitle: true,
